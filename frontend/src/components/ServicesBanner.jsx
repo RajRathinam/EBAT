@@ -54,7 +54,7 @@ const ServicesBanner = () => {
       <div className="relative w-full md:w-[60%] flex justify-center md:justify-start">
         <img
           ref={imgRef}
-          src="/servicePoster.jpg"
+          src="/servicePoster.webp"
           alt="Drone Services"
           className="h-64 sm:h-80 md:h-screen w-full object-cover 
           [clip-path:polygon(0_0,100%_0,100%_85%,50%_100%,0_85%)] 

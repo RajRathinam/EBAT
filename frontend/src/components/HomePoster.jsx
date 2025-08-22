@@ -12,7 +12,7 @@ const HomePoster = () => {
      <main className=' p-2  pt-24 md:px-10 md:py-10'>
         <section className="relative">
                 <img
-                    src="/poster.jpg"
+                    src="/poster.webp"
                     alt="Home Page Banner"
                     className="h-screen w-screen object-cover"
                 />
