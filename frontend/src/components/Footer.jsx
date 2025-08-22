@@ -79,7 +79,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/services/photography"
+                  to="/services/cinematography"
                   className="text-red-500 hover:text-red-700"
                 >
                  Cinematography
@@ -95,7 +95,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/services/inspection"
+                  to="/services/surveillance"
                   className="text-red-500 hover:text-red-700"
                 >
                   Surveying Drones
@@ -110,7 +110,7 @@ const Footer = () => {
             Contact
             <span className="absolute left-0 bottom-[-6px] w-12 h-[2px] bg-red-500"></span>
           </h3>
-          <p className="text-gray-600">Email: kasturi_sridevi@yahoo.com</p>
+          <p className="text-gray-600">Email: support@ebat.in</p>
           <p className="text-gray-600">Phone: +91 9962554922</p>
 
           <div className="flex space-x-4 mt-4">

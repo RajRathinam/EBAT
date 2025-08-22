@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import NavBar from './components/NavBar'
 import Home from './pages/Home';
 import Services from './pages/Services';
@@ -14,10 +14,31 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ContactBanner from './components/ContactBanner';
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Set timeout for 3 seconds
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center gap-3 h-screen bg-white">
+        <img src="/logo.png" alt="" className='h-12 w-12'/>
+        <h1 className="text-3xl font-bold animate-pulse bg-gradient-to-r from-[#d81d1d] to-[#d1b34f] bg-clip-text text-transparent">
+          Loading...
+        </h1>
+      </div>
+    );
+  }
 
   return (
     <Router>
-      <ScrollToTop/>
+      <ScrollToTop />
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -29,10 +50,10 @@ function App() {
         <Route path="/services/:id" element={<ServiceDetails />} />
         <Route path="/industry/:title" element={<IndustryDetails />} />
       </Routes>
-      <ContactBanner/>
-      <Footer/>
+      <ContactBanner />
+      <Footer />
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;

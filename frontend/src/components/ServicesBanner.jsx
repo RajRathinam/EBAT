@@ -50,7 +50,7 @@ const ServicesBanner = () => {
   }, []);
 
   return (
-    <section className="relative flex flex-col md:flex-row items-center justify-between bg-white overflow-hidden">
+    <section className="relative flex flex-col md:flex-row items-center justify-between md:pb-0 pb-10 bg-white overflow-hidden">
       <div className="relative w-full md:w-[60%] flex justify-center md:justify-start">
         <img
           ref={imgRef}

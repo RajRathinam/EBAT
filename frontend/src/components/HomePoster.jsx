@@ -26,7 +26,7 @@ const HomePoster = () => {
                         <img
                             src="/patch_corner.png"
                             alt=""
-                            className="absolute md:top-0 -top-0.5 -right-9.5 md:-right-10 h-10 w-10"
+                            className="absolute  md:-right-10 -top-0.5 -right-8.5  md:h-10 md:w-10 h-9 w-9"
                         />
                     </div>
 
@@ -37,7 +37,7 @@ const HomePoster = () => {
                         <img
                             src="/patch_corner.png"
                             alt=""
-                            className="absolute md:top-6 top-0.5 -right-9 md:-right-10 h-10 w-10"
+                            className="absolute md:top-5.5 top-1 -right-8 md:-right-10 md:h-10 md:w-10 h-9 w-9"
                         />
                         <img
                             src="/patch_corner.png"

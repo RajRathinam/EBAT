@@ -68,8 +68,8 @@ const Contact = () => {
               <FaEnvelope size={20} className="text-white" />
             </div>
             <div>
-              <h4 className="text-sm font-semibold uppercase text-gray-700">Yahoo</h4>
-              <p className="text-sm text-gray-600">kasturi_sridevi@yahoo.com</p>
+              <h4 className="text-sm font-semibold uppercase text-gray-700">Email</h4>
+              <p className="text-sm text-gray-600">support@ebat.in</p>
             </div>
           </div>
 
