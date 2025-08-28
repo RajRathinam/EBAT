@@ -69,7 +69,7 @@ const NavBar = () => {
       ))}
     </ul>
 
-    <Link to={"/about"} className="mt-4 md:hidden flex items-center gap-1 uppercase font-semibold bg-gradient-to-r from-[#d81d1d] to-[#d1b34f] px-6 py-2 rounded-3xl w-fit text-white cursor-pointer hover:scale-105 transition duration-300 ease-in-out">
+    <Link to={"/about"} onClick={() => setMobileOpen(false)} className="mt-4 md:hidden flex items-center gap-1 uppercase font-semibold bg-gradient-to-r from-[#d81d1d] to-[#d1b34f] px-6 py-2 rounded-3xl w-fit text-white cursor-pointer hover:scale-105 transition duration-300 ease-in-out">
       Explore <MdOutlineKeyboardDoubleArrowRight className="text-xl" />
     </Link>
   </div>

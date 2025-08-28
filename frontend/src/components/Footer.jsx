@@ -115,25 +115,25 @@ const Footer = () => {
 
           <div className="flex space-x-4 mt-4">
             <a
-              href="#"
+              href="mailto:support@ebat.in"
               className="p-2 rounded-full bg-gray-200 text-gray-700 hover:bg-red-500 hover:text-white transition"
             >
               <FaFacebookF />
             </a>
             <a
-              href="#"
+              href="mailto:support@ebat.in"
               className="p-2 rounded-full bg-gray-200 text-gray-700 hover:bg-red-500 hover:text-white transition"
             >
               <FaTwitter />
             </a>
             <a
-              href="#"
+              href="mailto:support@ebat.in"
               className="p-2 rounded-full bg-gray-200 text-gray-700 hover:bg-red-500 hover:text-white transition"
             >
               <FaInstagram />
             </a>
             <a
-              href="#"
+              href="mailto:support@ebat.in"
               className="p-2 rounded-full bg-gray-200 text-gray-700 hover:bg-red-500 hover:text-white transition"
             >
               <FaLinkedinIn />

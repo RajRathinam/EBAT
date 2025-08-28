@@ -1,11 +1,9 @@
 import React from "react";
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 
-
 const Contact = () => {
   return (
     <section className="p-2 pt-24 md:px-10 md:py-5 bg-gray-100">
-     
       <h1 className="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-4">
         CON
         <span className="bg-gradient-to-r from-[#d81d1d] to-[#d1b34f] bg-clip-text text-transparent">
@@ -15,12 +13,22 @@ const Contact = () => {
       <div className="w-40 h-1.5 bg-[#d81d1d] mx-auto rounded-xl mb-10"></div>
 
       <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
-     
-        <form className="space-y-5">
+    
+        <form
+          action="https://formsubmit.co/rajrathinam2005@email.com"
+          method="POST"
+          className="space-y-5"
+        >
+       
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you" />
+
           <div>
             <label className="block text-sm text-gray-600 mb-1">Name</label>
             <input
               type="text"
+              name="name"
+              required
               placeholder="Enter your name"
               className="w-full px-4 py-3 rounded-xl bg-white shadow-lg placeholder:text-slate-500 focus:outline-0 text-gray-800"
             />
@@ -30,6 +38,8 @@ const Contact = () => {
             <label className="block text-sm text-gray-600 mb-1">Email Address</label>
             <input
               type="email"
+              name="email"
+              required
               placeholder="Enter your email"
               className="w-full px-4 py-3 rounded-xl bg-white shadow-lg placeholder:text-slate-500 focus:outline-0 text-gray-800"
             />
@@ -39,6 +49,7 @@ const Contact = () => {
             <label className="block text-sm text-gray-600 mb-1">Phone Number</label>
             <input
               type="tel"
+              name="phone"
               placeholder="Enter your phone"
               className="w-full px-4 py-3 rounded-xl bg-white shadow-lg placeholder:text-slate-500 focus:outline-0 text-gray-800"
             />
@@ -47,11 +58,12 @@ const Contact = () => {
           <div>
             <label className="block text-sm text-gray-600 mb-1">Your Message</label>
             <textarea
+              name="message"
               rows="5"
+              required
               placeholder="Type your message..."
               className="w-full px-4 py-3 rounded-2xl bg-white shadow-lg placeholder:text-slate-500 focus:outline-0 text-gray-800 resize-none"
             ></textarea>
-
           </div>
 
           <button
